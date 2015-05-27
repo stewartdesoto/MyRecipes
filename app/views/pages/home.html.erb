@@ -4,7 +4,7 @@
     This is the homepage where you can share MyRecipes with the world!
   </h2>
   
-  <%= link_to "Sign up now!", "", class: "btn btn-large btn-success" %>
+  <%= link_to "Sign up now!", register_path, class: "btn btn-large btn-success" %>
 </div>
 
 <div class="row">
@@ -17,10 +17,10 @@
   </div>
   <div class="col-lg-4">
     <h3 class="midrow">
-      View Recipes as Guest
+      Sign in to your account
     </h3>
-    <h2 class="left">Browse as Guest and Sign up later</h2>
-    <p><%= link_to "Browse Recipe listings", "", class: "btn btn-small btn-warning" %></p>
+    <h2 class="left">Work with your recipe book!</h2>
+    <p><%= link_to "Sign in", 'login', class: "btn btn-small btn-warning" %></p>
   </div>
   <div class="col-lg-4">
     <h3 class="midrow">
