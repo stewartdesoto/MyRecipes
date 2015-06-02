@@ -24,7 +24,7 @@
       <strong>Ingredients:</strong>
       <%= f.collection_check_boxes(:ingredient_ids, Ingredient.all, :id, :name) do |cb| %>
         <% cb.label(class: "checkbox-inline input_checkbox") do %>
-          <%= cb.check_box(class: "checkbox") %>
+          <%= cb.check_box(class: "checkbox") + cb.text%>
         <% end %>
       <% end %>
       
